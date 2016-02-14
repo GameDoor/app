@@ -20,11 +20,22 @@
 		padding: 0;
 	  }
 	  
+	  body {
+		background-color: #16a085;
+		color: #ecf0f1;
+		font-weight: 600;
+		font-family: sans-serif;
+	  }
+	  
+	  h1, h2, h3, h4, h5, h6 {
+		text-decoration:underline;
+	  }
+	  
       .navElem {
       	list-style-type: none;
         display: block;
         
-        border-top: 5px solid white;
+        border-top: 5px solid #16a085;
         
         
         padding-top: 5px;
@@ -34,25 +45,31 @@
       #nav {
 		text-align: center;
       	width: 100%;
-        background-color: #009e06;
+        background-color: #d35400;
         
       }
 	  
-	#nav a:link		{text-decoration:none;color:white;}
-	#nav a:visited	{text-decoration:none;color:white;}
-	#nav a:hover	{text-decoration:none;color:white;}
-	#nav a:active   {text-decoration:none;color:white;}
+	a:link		{text-decoration:none;color:white;}
+	a:visited	{text-decoration:none;color:white;}
+	a:hover	{text-decoration:none;color:white;}
+	a:active   {text-decoration:none;color:white;}
       
 	  
 	#inhalt {
 		width:100%;
-		background-color: red;
+		background-color: #95a5a6;
+		margin-top: 20px;
 		
+	}
+	
+	.artikeltext {
+		margin-top: 10px;
 	}
 	
 	#alternate {
 		display: none;
 	}
+	
 	
 	@media only screen and (orientation:landscape) {
 		#nav, #inhalt, #toggle, #footer {
@@ -61,7 +78,9 @@
 		}
 		
 		#alternate {
+		text-align: center;
 			display: block;
+			font-size:600%;
 		}
 	}
 	</style>
@@ -69,13 +88,13 @@
 <body>
 <!-- Navigation Beginn-->
   <div id="nav">
-	<a class="navElem" href="javascript:toggle('toggle')">Men&uuml; aufklappen</a>
-    <ul  id="toggle" style="display:none;">
-	  <a href="#"><li class="navElem">Punkt 1</li></a>
-      <a href="#"><li class="navElem">Punkt 2</li></a>
-      <a href="#"><li class="navElem">Punkt 3</li></a>
-      <a href="#"><li class="navElem">Punkt 4</li></a>
-      <a href="#"><li class="navElem">Punkt 5</li></a>
+	<a class="navElem" href="javascript:toggle('menu')">Men&uuml;</a>
+    <ul  id="menu" style="display:none;">
+	  <a href="#"><li class="navElem">Neuigkeiten</li></a>
+      <a href="#"><li class="navElem">Server Informationen</li></a>
+      <a href="#"><li class="navElem">TeamSpeak Viewer</li></a>
+      <a href="#"><li class="navElem">Kontakt</li></a>
+      <a href="#"><li class="navElem">Impressum</li></a>
     </ul>
   </div>
 <!-- Navigation Ende-->
@@ -83,7 +102,41 @@
   
 <!-- Inhalt  Beginn -->
 	<div id="inhalt">
-		jgikguikgiu
+		<div class="inhaltscontainer">
+		
+		</div>
+		
+		<div class="inhaltscontainer">
+		
+		</div>
+		
+		<div class="inhaltscontainer">
+		
+		</div>
+		
+		<div class="inhaltscontainer">
+		
+		</div>
+		
+		<div class="inhaltscontainer">
+		<p class="artikeltext">
+		
+		</p>
+		</div>
+		
+		<div class="inhaltscontainer">
+		<h3>30.01.2016 - Minecraft Server offene Beta</h3>
+		<p class="artikeltext">
+			Heute k&ouml;nnen wir die Beta Phase unseres Minecraft Servers feiern!<br />
+			Der Server ist unter <b>HelixMC.de</b> zu erreichen.<br />
+			Unter der selben Addresse erreicht Ihr unseren TeamSpeak und die Website.<br />
+			Au&szlig;erdem startet zum Beta-Release auch unser Forum unter <a href="http://helixmc.de/forum" target="_blank">HelixMC.de/forum</a><br />
+			Wir freuen uns auf euch!<br /><br />
+			<a href="artikel1.html">Mehr ...</a>
+		
+		</p>
+		
+		</div>
 	</div>
 <!-- Inhalt Ende -->
   
@@ -96,7 +149,10 @@
 
 <!-- Wennn Gerät gedreht ist -->
 	<div id="alternate">
-	<p>Bitte drehe dein Ger&auml;t ins Hochformat</p>
+	<p>
+	Diese Ansicht wird noch nicht unterstützt!<br />
+	Bitte drehe dein Ger&auml;t ins Hochformat
+	</p>
 	</div>
 <!-- Wenn Gerät gedreht ist -->
 </body>
